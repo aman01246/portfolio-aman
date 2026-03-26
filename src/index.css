@@ -1,0 +1,311 @@
+/* Global styles for the portfolio application with enhanced color schemes */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables for theme colors */
+:root {
+
+  /* Light Mode Colors */
+--light-bg-primary: #f5f7fb;        /* Soft gray-blue background */
+--light-bg-secondary: #ffffff;      /* Cards / sections */
+--light-bg-accent: #eef2ff;         /* Accent sections */
+--light-text-primary: #0f172a;      /* Dark slate (high contrast) */
+--light-text-secondary: #475569;    /* Muted text */
+--light-border: #e2e8f0;            /* Subtle borders */
+
+/* Dark Mode Colors */
+--dark-bg-primary: #020617;         /* Deep navy */
+--dark-bg-secondary: #0f172a;       /* Card background */
+--dark-bg-tertiary: #111827;        /* Elevated surfaces */
+--dark-text-primary: #e5e7eb;       /* Soft white */
+--dark-text-secondary: #9ca3af;     /* Muted gray */
+--dark-border: #1e293b;             /* Low-contrast border */
+
+
+/* Accent Colors */
+--accent-primary: #3b82f6;   /* Primary actions (buttons, links) */
+--accent-secondary: #8b5cf6; /* Highlights / tags */
+--accent-success: #22c55e;   /* Success / completed */
+--accent-warning: #fbbf24;   /* Warnings */
+--accent-danger: #ef4444;    /* Errors */
+
+
+  /* Old color variables */
+  /* Light Mode Colors */
+  /* --light-bg-primary: #f8f9fa;
+  --light-bg-secondary: #ffffff;
+  --light-bg-accent: #e8f4f8;
+  --light-text-primary: #1a1a2e;
+  --light-text-secondary: #5a5a7a;
+  --light-border: #e0e0e0; */
+  
+  /* Dark Mode Colors */
+  /* --dark-bg-primary: #0d1117;
+  --dark-bg-secondary: #1a1a2e;
+  --dark-bg-tertiary: #0e0e13;
+  --dark-text-primary: #e0e0e0;
+  --dark-text-secondary: #a0a0c0;
+  --dark-border: #404060;
+   */
+  /* Accent Colors */
+  /* --accent-primary: #0d6efd;
+  --accent-secondary: #6366f1;
+  --accent-success: #10b981;
+  --accent-warning: #f59e0b;
+  --accent-danger: #ef4444; */
+}
+
+/* Base body styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Root element */
+#root {
+  min-height: 100vh;
+}
+
+/* Section spacing */
+section {
+  padding: 3rem 0;
+}
+
+/* Uniform Card Styling */
+.card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.bg-dark .card {
+  background: rgba(33, 37, 41, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+  flex-shrink: 0;
+  border-bottom: none;
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 50%, var(--accent-tertiary) 100%) !important;
+  color: white !important;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.card-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  pointer-events: none;
+}
+
+.bg-dark .card-header {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 50%, var(--accent-tertiary) 100%) !important;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+}
+
+.bg-dark .card-body {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+}
+
+.card-footer {
+  flex-shrink: 0;
+  margin-top: auto;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  background: rgba(248,249,250,0.8);
+  padding: 1rem 1.5rem;
+}
+
+.bg-dark .card-footer {
+  border-top-color: rgba(255,255,255,0.1);
+  background: rgba(33,37,41,0.8);
+}
+
+/* Enhanced Card hover effects */
+.card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.bg-dark .card:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255,255,255,0.2);
+}
+
+/* Card inner glow effect */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bg-dark .card::before {
+  background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.08));
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* Skills and Projects Grid Consistency */
+.row.g-4 > .col-md-6,
+.row.g-4 > .col-lg-4 {
+  display: flex;
+}
+
+.row.g-4 > .col-md-6 .card,
+.row.g-4 > .col-lg-4 .card {
+  width: 100%;
+}
+
+/* Button styling */
+.btn {
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  border: none;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+}
+
+.btn-outline-primary {
+  color: var(--accent-primary) !important;
+  border: 2px solid var(--accent-primary);
+}
+
+.btn-outline-primary:hover {
+  transform: translateY(-2px);
+  background-color: var(--accent-primary);
+  color: white !important;
+}
+
+/* Text gradient effect */
+.text-primary {
+  color: var(--accent-primary) !important;
+  font-weight: 600;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Badge styling */
+.badge {
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Alert styling */
+.alert {
+  border-radius: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 0;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  /* Ensure single column on mobile */
+  .row.g-4 > .col-md-6,
+  .row.g-4 > .col-lg-4 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+/* Accessibility improvements */
+:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Smooth link colors */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+/* Card Header Alignment */
+.card-header h5 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* List item alignment */
+li.d-flex {
+  align-items: flex-start;
+}
+
+/* Skills Item spacing */
+.list-unstyled li {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Ensure badge spacing */
+.badge.me-2 {
+  margin-right: 0.5rem !important;
+  flex-shrink: 0;
+}
+
