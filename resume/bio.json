@@ -1,0 +1,182 @@
+{
+    "name": "Aman Kumar",
+    "job_title": "Java Full Stack Developer",
+    "professional_title": "Software Developer",
+    "image": "resume/img.jpeg",
+    "mobile": "0000000000",
+    "email": "amankumar01246@gmail.com",
+    "address": "Hyderabad, India",
+    "about_me": "Proactive and motivated Software Developer pursuing a Master of Computer Applications (MCA), with a strong foundation in Java Full Stack development. I enjoy building practical and reliable applications using Java, Spring, and modern web technologies. I am passionate about learning new tools, improving my problem-solving skills, and growing as a developer in the fast-changing tech world."
+    ,   
+    "education": [
+        {
+            "degree": "MCA",
+            "institution": "Ranchi University, Ranchi",
+            "status": "Completed",
+            "year": "2024"
+        },
+        {
+            "degree": "BCA",
+            "institution": "Ranchi University, Ranchi",
+            "status": "Completed",
+            "year": "2022"
+        },
+        {
+            "degree": "Intermediate",
+            "institution": "Marwari College, Ranchi",
+            "year": "2019"
+        },
+        {
+            "degree": "Matriculation",
+            "institution": "CBSE , Ranchi",
+            "year": "2017"
+        }
+    ],
+
+    "skills": [
+        {
+            "category": "Java Programming Languages",
+            "icon": "☕",
+            "items": ["OPPs", "Exception Handling", "Multithreading", "String/Array Manipulation" , "Collections Framework", "Java 8 Features"],
+            "description": "A strog foundation in Java programming and object-oriented principles",
+            "proficiency": "Intermediate"
+        },
+         {
+            "category": "Database Management",
+            "icon": "🗄️",
+            "items": ["Oracle (SQL/PL-SQL)", "SQL Queries", "Database Design"],
+            "description": "Database design, optimization, and complex query writing",
+            "proficiency": "Intermediate"
+        },
+        {
+            "category": "spring Framework",
+            "icon": "🌱",
+            "items": ["Spring Core", "Spring MVC", "Spring Boot"],
+            "description": "Building robust and scalable web applications using Spring framework",
+            "proficiency": "Beginner"
+        },
+    
+        {
+            "category": "Backend Technologies",
+            "icon": "⚙️",
+            "items": ["Java", "JDBC", "J2EE", "Servlets" , "JSP"],
+            "description": "Server-side development and business logic implementation",
+            "proficiency": "Beginner"
+        },
+       
+        {
+            "category": "Frontend Technologies",
+            "icon": "🌐",
+            "items": ["HTML5", "CSS3", "JavaScript (ES6+)", "React.js", "Bootstrap"],
+            "description": "Building responsive and interactive user interfaces",
+            "proficiency": "Intermediate"
+        },
+        
+        {
+            "category": "Developer Tools",
+            "icon": "🛠️",
+            "items": ["Eclipse IDE", "VS Code", "SQL Plus 21c", "Git", "Vite"],
+            "description": "IDEs, version control, and build tools for development",
+            "proficiency": "Intermediate"
+        },
+        {
+            "category": "Core Concepts",
+            "icon": "🧠",
+            "items": ["Object-Oriented Programming", "Data Structures", "Problem Solving", "REST APIs"],
+            "description": "Fundamental computer science concepts and design patterns",
+            "proficiency": "Intermediate"
+        }
+    ],
+
+    "project": [
+        {
+            "id": 1,
+            "title": "Hostel Management System",
+            "type": "SAAS Architecture",
+            "description": "Developed a comprehensive library management system to streamline book lending, returns, and inventory management using Java and JDBC.",
+            "technologies": ["Java", "JDBC", "MySQL", "HTML", "CSS"],
+            "highlights": ["Book Inventory Management", "User Registration & Authentication", "Lending & Return Tracking"]
+        },
+        {
+            "id": 2,
+            "title": "Online Quiz Application",
+            "type": "Academic Project",
+            "description": "Developed an interactive online quiz platform allowing users to take timed quizzes with instant feedback and score tracking.",
+            "technologies": ["Java", "JDBC", "Servlets", "HTML", "CSS", "JavaScript"],
+            "highlights": ["Dynamic Question Loading", "Score Calculation", "User-Friendly Interface"]
+        },
+        {
+            "id": 3,
+            "title": "Banking System",
+            "type": "Major Project",
+            "description": "Developed a secure and scalable banking system using J2EE, featuring account management, fund transfer, authentication, and transaction history.",
+            "technologies": ["Java", "J2EE", "Servlet", "JSP", "JDBC", "MySQL"],
+            "highlights": [
+                "User Authentication & Authorization",
+                "Account Management",
+                "Fund Transfer Module",
+                "Transaction History",
+                "Session Management",
+                "MVC Architecture"
+            ]
+        },
+
+        {
+        "id": 4,
+        "title": "To-Do Application",
+        "type": "Mini Project",
+        "description": "Built a responsive and user-friendly To-Do application in React with features like task creation, deletion, filtering, and local storage persistence.",
+        "technologies": ["React", "JavaScript", "HTML", "CSS"],
+        "highlights": [
+            "Add, Edit & Delete Tasks",
+            "Task Filtering",
+            "Responsive UI",
+            "Local Storage Integration",
+            "Component-Based Architecture"
+        ]
+        },
+        {
+            "id": 5,
+            "title": "Professional Portfolio Website",
+            "type": "Personal Project",
+            "description": "Developed a modern, responsive portfolio website to showcase skills, projects, and professional experience with dark mode functionality.",
+            "technologies": ["React.js", "HTML5", "CSS3", "JavaScript", "Bootstrap"],
+            "highlights": ["Responsive Design", "Dark Mode Toggle", "Modular Components", "Data Integration"]
+        }
+    ],
+
+    "training": {
+        "program": "Java Full Stack Training Program",
+        "institution": "Naresh IT, Hyderabad",
+        "duration": "8 Months",
+        "description": "Comprehensive training in both Frontend and Backend Technologies along with Oracle Database management.",
+        "achievements": [
+            "Completed 50+ scenario-based questions",
+            "Solved logical programming problems",
+            "Hands-on experience with live projects",
+            "Full Stack application development"
+        ]
+    },
+
+    "certifications": [
+        {
+            "title": "Java Full Stack Development",
+            "issuer": "Naresh IT Technologies",
+            "year": "2025"
+        },
+        {
+            "title": "Bachelor of Computer Applications (BCA)",
+            "issuer": "Ranchi, Jharkhand",
+            "year": "2022"
+        }
+    ],
+
+    "strengths": [
+        "Problem-solving with data structures and algorithms",
+        "Full-stack development capability",
+        "Quick learner and adaptable to new technologies",
+        "Strong foundation in OOPS concepts",
+        "Database design and optimization",
+        "Responsive UI/UX development"
+    ]
+}
