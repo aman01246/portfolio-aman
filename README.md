@@ -22,9 +22,7 @@ This portfolio includes comprehensive SEO optimizations:
 - Robots.txt for crawler guidance
 - Canonical URLs to prevent duplicate content
 
-## Live Site
 
-Visit: https://www.vikashkumar.site
 
 ## Tech Stack
 
