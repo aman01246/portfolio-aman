@@ -1,4 +1,4 @@
-# Vikash Kumar - Portfolio
+# Aman Kumar - Portfolio
 
 A modern, responsive portfolio website built with React and Vite, showcasing Vikash Kumar's skills as a Java Full Stack Developer.
 
